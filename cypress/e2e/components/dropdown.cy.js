@@ -11,6 +11,10 @@ describe('dropdown page testing', function () {
         DropDownobj.variantDD()
         DropDownobj.withplaceholderDD()
         DropDownobj.withdisabledoptionsDD()
+        DropDownobj.autosuggestDD()
+        DropDownobj.dynamic_autosuggestDD()
+        DropDownobj.autosuggest_withfreetextDD()
+        DropDownobj.filterDD()
     })
 
 
