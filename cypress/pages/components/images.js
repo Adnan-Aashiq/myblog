@@ -29,6 +29,7 @@ export class Images{
         cy.get("article>div:nth-child(10)").as("locators")
         cy.get("@locators").find(".MomImageCarousel__NextButton").click()   
         cy.get("@locators").find(".MomImageCarousel__PrevButton").click()
+        cy.wait(2000)
         cy.get('.MomImageCarousel__Image--zoomable img').trigger('mousedown')
 
     }

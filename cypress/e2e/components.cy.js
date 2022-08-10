@@ -1,12 +1,12 @@
 /// <reference types="Cypress" />
 
-import { DropDown } from "../pages/dropdown";
-import { MomTable } from "../pages/momtable";
-import { Images } from "../pages/images";
-import { Checkbox } from "../pages/checkbox";
-import { DatePicker } from "../pages/datepicker";
-import { RadioButtons } from "../pages/radiobuttons";
-import { TextInput } from "../pages/textinput";
+import { DropDown } from "../pages/components/dropdown";
+import { MomTable } from "../pages/components/momtable";
+import { Images } from "../pages/components/images";
+import { Checkbox } from "../pages/components/checkbox";
+import { DatePicker } from "../pages/components/datepicker";
+import { RadioButtons } from "../pages/components/radiobuttons";
+import { TextInput } from "../pages/components/textinput";
 
 
 
@@ -83,7 +83,7 @@ describe('All components pages testing', function () {
         RadioButtonsobj.default()
         RadioButtonsobj.validation()
     })
-    it.only('Radio Button page components testing', function () {
+    it('Radio Button page components testing', function () {
         TextInputobj.typetext()
         TextInputobj.example()
         TextInputobj.patterns()
