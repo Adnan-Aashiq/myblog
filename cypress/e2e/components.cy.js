@@ -4,17 +4,20 @@ import { DropDown } from "../pages/dropdown";
 import { MomTable } from "../pages/momtable";
 import { Images } from "../pages/images";
 import { Checkbox } from "../pages/checkbox";
+import { DatePicker } from "../pages/datepicker";
+import { RadioButtons } from "../pages/radiobuttons";
+import { TextInput } from "../pages/textinput";
 
 
 
 
-const DropDownobj= new DropDown()
+const DropDownobj = new DropDown()
 const MomTableobj = new MomTable()
 const Imagesobj = new Images()
 const Checkboxobj = new Checkbox()
-
-
-
+const DatePickerobj = new DatePicker()
+const RadioButtonsobj = new RadioButtons()
+const TextInputobj = new TextInput()
 
 describe('All components pages testing', function () {
     it('dropdown page components testing', function () {
@@ -54,12 +57,39 @@ describe('All components pages testing', function () {
         Imagesobj.carousel_zoomableimage()
         Imagesobj.modalwithmultipleimages()
     })
-    it.only('Checkboxes page components testing', function () {
+    it('Checkboxes page components testing', function () {
         Checkboxobj.typetext()
         Checkboxobj.single_checkbox()
         Checkboxobj.group_checkbox()
         Checkboxobj.checkboxstates()
         Checkboxobj.checkboxeswitherror()
         Checkboxobj.checkboxeswithwarning()
+    })
+    it('Date Picker page components testing', function () {
+        DatePickerobj.typetext()
+        DatePickerobj.daymonthYear()
+        DatePickerobj.monthYear()
+        DatePickerobj.dropdown()
+        DatePickerobj.dateinputRange()
+        DatePickerobj.defaultState()
+        DatePickerobj.errorValidation()
+        DatePickerobj.warningValidation()
+    })
+    it('Radio Button page components testing', function () {
+        RadioButtonsobj.typetext()
+        RadioButtonsobj.example()
+        RadioButtonsobj.horizontalStyle()
+        RadioButtonsobj.cardStyle()
+        RadioButtonsobj.default()
+        RadioButtonsobj.validation()
+    })
+    it.only('Radio Button page components testing', function () {
+        TextInputobj.typetext()
+        TextInputobj.example()
+        TextInputobj.patterns()
+        TextInputobj.variants()
+        TextInputobj.states()
+        TextInputobj.validations()
+
     })
 })

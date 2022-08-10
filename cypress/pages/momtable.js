@@ -1,3 +1,4 @@
+/// <reference types="Cypress" />
 export class MomTable {
     typetext() {
         cy.visit("https://dxplus.mom.gov.sg/components/index.html")
