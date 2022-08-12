@@ -1,6 +1,5 @@
 
 
-
 /// <reference types="Cypress" />
 
 import { DropDown } from "../pages/components/dropdown";
